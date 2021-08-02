@@ -1,12 +1,15 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
 import logo from './logo.svg';
 import NavBar from "./components/NavBar";
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <ItemListContainer greeting="Saludos"/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -26,3 +29,4 @@ function App() {
 }
 
 export default App;
+console.log(React.version);

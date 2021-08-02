@@ -1,0 +1,15 @@
+.item-list {
+    display: flex;
+    height: 8rem;
+    background-color: whitesmoke;
+    padding-top: 4rem;
+    justify-content: center;
+}
+
+.item-list li {
+    list-style: none;
+    text-justify: center;
+    background-color: #0d6efd;
+    padding: 1rem;
+    color: whitesmoke;
+}
