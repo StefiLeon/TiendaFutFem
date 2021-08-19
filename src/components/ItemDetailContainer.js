@@ -1,22 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import Item from './Item';
-import ItemDetailContainer from './ItemDetailContainer';
+import ItemDetail from './ItemDetail';
 
-export default function ItemList() {
+export default function ItemDetailContainer() {
     useEffect(() => {
         new Promise((resolve, reject) => {
-            setTimeout(() => resolve(Item), 2000);
+            setTimeout(() => resolve(ItemDetail), 2000);
         })
         .then((dataResolve) => {
             console.log("Data Resolve", dataResolve);
-            // setProductos(dataResolve);
         })
         .catch((error) => {
             console.log("error", error);
         });
     }, []);
-    return (<>
-            <Item />
-            </>
+    return (
+            <ItemDetail />
             );
 }

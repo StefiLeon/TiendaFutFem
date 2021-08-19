@@ -1,4 +1,5 @@
 import React from 'react';
+import ItemDetail from './ItemDetail';
 
 const dataDeProductos = [
     {
@@ -38,7 +39,6 @@ export default function Item(props) {
                 <div style={{paddingTop: "5rem"}}>
                     <h3 style={{color: "whitesmoke", backgroundColor: "#0275d8"}}>{cadaProducto.tipoDeProducto} {cadaProducto.modelo}</h3>
                     <p>Precio: ${cadaProducto.precio}</p>
-                    {/* <img src= {cadaProducto.imagen} /> No funciona correctamente con una URL*/}
                 </div>))}
         </>
     )
